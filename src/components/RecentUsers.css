@@ -1,0 +1,90 @@
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filter-btn, .add-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-btn {
+  background: #f0f0f0;
+}
+
+.add-btn {
+  background: #13b6ec;
+  color: #fff;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background: #13b6ec;
+  color: white;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 8px;
+  font-size: 0.85rem;
+}
+
+.company {
+  background: #e6f2fb;
+  color: #13b6ec;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}

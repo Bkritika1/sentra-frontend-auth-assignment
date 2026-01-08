@@ -1,0 +1,155 @@
+.auth-page {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  display: flex;
+  width: 750px;
+  height: 480px;
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  transition: transform 0.6s ease-in-out;
+}
+
+.auth-left,
+.auth-right {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.auth-left {
+  background: linear-gradient(135deg, #cba7e2, #a0c4ff);
+  color: white;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+.auth-right {
+  background: #f6f5f7;
+}
+
+.auth-card.sign-up-mode .auth-left {
+  transform: translateX(100%);
+  border-radius: 3rem 0 0 3rem;
+}
+
+.auth-card.sign-up-mode .auth-right {
+  transform: translateX(-100%);
+}
+
+.toggle-btn {
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #cba7e2, #a0c4ff);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-right input {
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  width: 100%;
+}
+
+
+
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input {
+  width: 100%;
+  /* padding-right: 40px; */
+}
+
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+
+@media (max-width: 768px) {
+  .auth-card {
+    width: 92%;
+    height: auto;
+    min-height: unset;
+  }
+
+  .auth-left,
+  .auth-right {
+    padding: 24px 20px;
+  }
+
+  .auth-left h2,
+  .auth-right h2 {
+    font-size: 22px;
+  }
+
+  .auth-left p {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .auth-right input {
+    font-size: 14px;
+    padding: 11px;
+        width: 80%;
+  }
+  
+
+  .submit-btn,
+  .toggle-btn {
+      width: 92%;
+    padding: 12px;
+    font-size: 15px;
+  }
+   .eye-icon {
+    font-size: 16px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .auth-left h2,
+  .auth-right h2 {
+    font-size: 20px;
+  }
+
+  .auth-left p {
+    font-size: 13px;
+  }
+}

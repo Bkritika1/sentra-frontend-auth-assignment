@@ -1,0 +1,39 @@
+.header {
+  height: 64px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-info span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.logout-btn {
+  background: #0ea5e9;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
