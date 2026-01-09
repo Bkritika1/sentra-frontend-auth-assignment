@@ -68,6 +68,16 @@
   font-weight: bold;
   cursor: pointer;
 }
+.google-btn{
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #cba7e2, #a0c4ff);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 .auth-right input {
   padding: 12px;
@@ -147,6 +157,10 @@
   .auth-left h2,
   .auth-right h2 {
     font-size: 20px;
+  }
+  .eye-icon{
+    right: 40px;
+   top: 55%;
   }
 
   .auth-left p {
